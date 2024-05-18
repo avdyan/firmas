@@ -27,5 +27,9 @@ const { data } = (await supabase
       >Sign out</a
     >
     <Reviews reviews={data} client:idle />
+
+    <!-- Embed a specific section of the website: https://pdf-signature-puce.vercel.app/ -->
+    <iframe src="https://pdf-signature-puce.vercel.app/" frameborder="0"
+    ></iframe>
   </section>
 </Base>
