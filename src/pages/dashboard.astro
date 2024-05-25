@@ -19,17 +19,22 @@ const { data } = (await supabase
       {email}
     </p>
     <p class="max-w-prose text-lg mb-2 dark:text-zinc-100">
-      This is a protected page. You can only see this if you are logged in.
+      Ya estás dentro! 🎉
     </p>
+
+    <!-- <Reviews reviews={data} client:idle /> -->
+
+    <!-- embed the site http://firmas.firmados.tech/ here with full width and lenght -->
+    <iframe
+      src="https://firmas.firmados.tech/"
+      class="w-full h-screen"
+      frameborder="0"></iframe>
+
     <a
       href="/api/auth/signout"
       class="mb-10 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 px-3 py-1 rounded-md"
       >Sign out</a
     >
-    <Reviews reviews={data} client:idle />
 
-    <!-- Embed a specific section of the website: https://pdf-signature-puce.vercel.app/ -->
-    <iframe src="https://pdf-signature-puce.vercel.app/" frameborder="0"
-    ></iframe>
   </section>
 </Base>
